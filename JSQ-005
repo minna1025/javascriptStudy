@@ -1,0 +1,13 @@
+var strings = ['Hello world', 'javascript', 'study', 'test'];
+
+function checkEnventString(str){
+  if( str.length > 5 ){
+    return true;
+  }else{
+    return false;
+  }
+}
+
+var eventStrings = strings.filter(checkEnventString);
+
+console.log(eventStrings);
