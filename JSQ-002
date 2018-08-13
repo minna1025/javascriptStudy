@@ -1,0 +1,8 @@
+var example = {
+  content: 'Hello, World!',
+  className: 'greetings'
+};
+
+function get_content(pram){
+  return pram.content;
+}
