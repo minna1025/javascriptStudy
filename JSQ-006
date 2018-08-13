@@ -1,0 +1,8 @@
+var numbers = [ 10, 9, 8, 7, 6, 5, 4 ];
+
+function checkEvenNumber(num){
+  return ( num%2 === 0 )? true:false;
+}
+
+var evenNumbers = numbers.filter(checkEvenNumber);
+console.log(evenNumbers);
