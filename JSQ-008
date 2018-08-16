@@ -3,7 +3,7 @@ var numbers = [ 10, 9, 8, 7, 6, 5, 4 ];
 var changeNumbers = [];
 
 numbers.forEach(function(num){
-	return changeNumbers.push(num+100);
+	changeNumbers.push(num+100);
 });
 
 console.log(changeNumbers);
