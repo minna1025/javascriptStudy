@@ -3,6 +3,7 @@ var example = {
   className: 'greetings'
 };
 
-function get_content(pram){
+function get_content(param){
+// function get_content(obj){ 가 더 
   return pram.content;
 }
