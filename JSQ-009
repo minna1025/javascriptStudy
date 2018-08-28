@@ -1,6 +1,11 @@
-var section = new Object();
-section.h1 = 'Famous Cities';
-section.article = [
+var html = new Object();
+html.head = {};
+html.head.meta = {charset:"UTF-8"}
+html.head.title = "title of the document";
+html.body = {};
+html.body.section = {};
+html.body.section.h1 = 'Famous Cities';
+html.body.section.article = [
   { h2 : "London", p : "London is the capital city of England." },
   { h2 : "Paris", p : "Paris is the capital city of France." }
 ];
