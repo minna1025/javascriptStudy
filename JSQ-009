@@ -1,10 +1,6 @@
-var section = {
-  h1 : "Famous Cities",
-  article : {
-    h2 : "London",
-    p : "London is the capital city of England."
-  },{
-    h2 : "Paris",
-    p : "Paris is the capital city of France."
-  }
-};
+var section = new Object();
+section.h1 = 'Famous Cities';
+section.article = [
+  { h2 : "London", p : "London is the capital city of England." },
+  { h2 : "Paris", p : "Paris is the capital city of France." }
+];
