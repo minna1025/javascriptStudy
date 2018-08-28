@@ -1,13 +1,14 @@
 var strings = ['Hello world', 'javascript', 'study', 'test'];
 
-function checkEnventString(str){
-  if( str.length > 5 ){
+function checkEvenString(str){
+// function stringLength(str){ 가 좀더 적절
+  if( str.length >= 5 ){
     return true;
   }else{
     return false;
   }
 }
 
-var eventStrings = strings.filter(checkEnventString);
+var evenStrings = strings.filter(checkEvenString);
 
-console.log(eventStrings);
+console.log(evenStrings);
