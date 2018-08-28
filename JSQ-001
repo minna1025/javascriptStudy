@@ -4,3 +4,4 @@ var example = {
 };
 
 var example_string = example.content;
+// var example_string = example['content'];
