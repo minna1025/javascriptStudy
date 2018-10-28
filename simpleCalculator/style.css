@@ -1,0 +1,45 @@
+h1 {
+  text-align: center;
+}
+
+.calculator {
+  margin: 20px;
+}
+
+.result-area {
+  padding: 10px;
+  text-align: right;
+  background-color: #eee;
+  border: 1px dotted black;
+}
+
+.control-pad {
+  clear: both;
+}
+
+.control-pad div {
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  float: left;
+  cursor:pointer;
+}
+
+.opr {
+  border: 1px dotted blue;
+  color: blue;
+}
+
+.addition, .subtraction, .multiplication, .division {
+  width: 25%;
+}
+
+.equal, .reset {
+  width: 33.33%;
+}
+
+.num {
+  border: 1px dotted green;
+  color: green;
+  width: 33.33%;
+}
