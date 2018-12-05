@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="title" content="타이틀">
+  <meta name="description" content="내용">
+  <meta name="keywords" content="키워드">
+  <title>SIMPLE TODO</title>
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+</head>
+<body>
+<div id="wrap">
+  <form action="">
+    <div class="input-row">
+      <input type="text" value="" id="input-text" placeholder="What will U do?">
+      <button type="submit" id="add">ADD</button>
+    </div>
+  </form>
+  <div class="todo-wrap">
+    <div class="todo-items" id="todo-items">
+      <div class="todo-item">
+        <div class="todo-item-inner">
+          <span class="todo-text">Default</span>
+          <div class="btn-wrap">
+            <span class="edit" id="edit" onclick="todoEdit(this)"></span>
+            <span class="remove" id="remove" onclick="todoRemove(this)"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<script src="./js/common.js"></script>
+</html>

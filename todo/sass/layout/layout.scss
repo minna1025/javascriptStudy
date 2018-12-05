@@ -1,0 +1,23 @@
+@charset 'utf-8';
+
+#wrap { width:350px; margin:50px auto;
+  * { box-sizing:border-box; margin:0; padding:0;}
+  .hide { display:none;}
+  .input-row { height:30px;
+    #input-text { width:84%; height:25px;}
+    button { width:14%; height:25px;}
+  }
+  #todo-items { margin: 10px auto;
+    .todo-item { height:25px; line-height:25px; display:flex;
+      .input-row { width:84%;}
+      .todo-text { width:84%; display:inline-block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+      .btn-wrap { display:inline-block; right:0; width:14%;}
+      .edit { width:16px; height:16px; display:inline-block; background: url('../images/edit.png') center center no-repeat; vertical-align:middle; cursor:pointer; margin:3px;
+        &:hover, &.editing { background-image: url('../images/edit_hover.png');}
+      }
+      .remove { width:16px; height:16px; margin-left:5px; display:inline-block; background: url('../images/garbage_close.png') center center no-repeat; vertical-align:middle; cursor:pointer;
+        &:hover { background-image: url('../images/garbage_open.png');}
+      }
+    }
+  }
+}

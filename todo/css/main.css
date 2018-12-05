@@ -1,0 +1,17 @@
+#wrap { width: 350px; margin: 50px auto; }
+#wrap * { box-sizing: border-box; margin: 0; padding: 0; }
+#wrap .hide { display: none; }
+#wrap .input-row { height: 30px; }
+#wrap .input-row #input-text { width: 84%; height: 25px; }
+#wrap .input-row button { width: 14%; height: 25px; }
+#wrap #todo-items { margin: 10px auto; }
+#wrap #todo-items .todo-item { height: 25px; line-height: 25px; display: flex; }
+#wrap #todo-items .todo-item .input-row { width: 84%; }
+#wrap #todo-items .todo-item .todo-text { width: 84%; display: inline-block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#wrap #todo-items .todo-item .btn-wrap { display: inline-block; right: 0; width: 14%; }
+#wrap #todo-items .todo-item .edit { width: 16px; height: 16px; display: inline-block; background: url("../images/edit.png") center center no-repeat; vertical-align: middle; cursor: pointer; margin: 3px; }
+#wrap #todo-items .todo-item .edit:hover, #wrap #todo-items .todo-item .edit.editing { background-image: url("../images/edit_hover.png"); }
+#wrap #todo-items .todo-item .remove { width: 16px; height: 16px; margin-left: 5px; display: inline-block; background: url("../images/garbage_close.png") center center no-repeat; vertical-align: middle; cursor: pointer; }
+#wrap #todo-items .todo-item .remove:hover { background-image: url("../images/garbage_open.png"); }
+
+/*# sourceMappingURL=main.css.map */
