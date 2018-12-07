@@ -62,33 +62,6 @@ document.getElementById('add').onclick = todoAdd = (e) => {
 
 const todoEdit = (thiz) => {
   const $this = thiz;
-  const parents = $this.parentNode.parentNode;
-  console.log('parents : ', parents);
-  if( parents.hasChildNodes)
-  const todo_text = parents.querySelector('.todo-text');
-  console.log('todo_text : ', todo_text);
-  const this_index = todo_text.getAttribute('data-index');
-  console.log('todoList[this_index] : ',todoList[this_index])
-  const todo_text_copy = '<div class="todo-item"><span class="todo-text" data-index='+ todoList[this_index].id +'>'+todoList[this_index].todo+'</span><div class="btn-wrap"><span class="edit" id="edit" onclick="todoEdit(this)"></span><span class="remove" id="remove" onclick="todoRemove(this)"></span></div></div>';
-  const input_edit = '<div class="input-row"><input type="text" value="" id="input-text" placeholder="What will U do?"><input type="button" id="editBtn">EDIT</input></div>';
-
-  if ( !eidting ){
-    eidting = !eidting;
-    $this.classList.add('editing');
-    todo_text.remove();
-    parents.insertAdjacentHTML('afterbegin', input_edit);
-  }else {
-    $this.classList.remove('editing');
-    todo_text.remove();
-    console.log('todo_text_copy : ', )
-    parents.insertAdjacentHTML('afterbegin', todo_text_copy);
-  }
-  
-
-  // todoList[this_index].state = '';
-  console.log(todo_text);
-  console.log(todoList[this_index]);
-
 }
 
 

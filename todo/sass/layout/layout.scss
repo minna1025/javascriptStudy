@@ -9,9 +9,10 @@
   }
   #todo-items { margin: 10px auto;
     .todo-item { height:25px; line-height:25px; display:flex;
-      .input-row { width:84%;}
-      .todo-text { width:84%; display:inline-block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-      .btn-wrap { display:inline-block; right:0; width:14%;}
+      .todo-item-inner { width:100%;}
+      .input-row { width:80%;}
+      .todo-text { float:left; width:80%; display:block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor:pointer;}
+      .btn-wrap { float:left; display:block; right:0; width:14%;}
       .edit { width:16px; height:16px; display:inline-block; background: url('../images/edit.png') center center no-repeat; vertical-align:middle; cursor:pointer; margin:3px;
         &:hover, &.editing { background-image: url('../images/edit_hover.png');}
       }
