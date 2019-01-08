@@ -3,15 +3,17 @@
 #wrap { width:350px; margin:50px auto;
   * { box-sizing:border-box; margin:0; padding:0;}
   .hide { display:none;}
-  .input-row { height:30px;
+  .input-row { height:30px; z-index:4;
     #input-text { width:84%; height:25px;}
-    button { width:14%; height:25px;}
+    button { width:14%; height:25px; z-index:9;}
   }
   #todo-items { margin: 10px auto;
     .todo-item { height:25px; line-height:25px; display:flex;
       .todo-item-inner { width:100%;}
       .input-row { width:80%;}
-      .todo-text { float:left; width:80%; display:block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor:pointer;}
+      .todo-text { float:left; width:80%; display:block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor:pointer; z-index:0;
+        &.done { text-decoration:line-through;}
+      }
       .btn-wrap { float:left; display:block; right:0; width:14%;}
       .edit { width:16px; height:16px; display:inline-block; background: url('../images/edit.png') center center no-repeat; vertical-align:middle; cursor:pointer; margin:3px;
         &:hover, &.editing { background-image: url('../images/edit_hover.png');}
